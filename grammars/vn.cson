@@ -1,0 +1,133 @@
+scopeName: 'source.vn'
+name: 'VNscript'
+fileTypes: [ 'vn', 'vnscript' ]
+limitLineLength: false
+
+patterns: [
+  {
+    name: 'comment'
+    match: '//.*$'
+  }
+  {
+    match: '^@\\w*$'
+    name: 'scene'
+  }
+  {
+    match: '\\|.*?\\|'
+    name: 'variable'
+  }
+
+  {
+    begin: '^\\s*?(?=#)'
+    end:'$'
+    patterns:[
+      {
+        match: '\\w+(?=\\s*?=)'
+        name: 'set-variable'
+      }
+      {
+        match: '#(color|combination|folder|gallery|journal|include|portrait_y|journal|item|portrait_y|relation_add|relation_stats|stats|status_text|status_image|walkthrough)'
+        name: 'pre-function'
+      }
+      {
+        match: '(?!^)#[0-9a-fA-F]+\\b'
+        name: 'constant.numeric.vnscript'
+      }
+      {
+        match: '\\b-?([0-9]*[.])?[0-9]+'
+        name: 'constant.numeric.vnscript'
+      }
+      {
+        match: '\\|.*?\\|'
+        name: 'variable'
+      }
+      {
+        match: '(?!=.*\\))(true|false)(?=.*\\))'
+        name: 'true-false'
+      }
+      {
+        match: '@\\w*'
+        name: 'scene'
+      }
+    ]
+  }
+
+  {
+    begin: '^{'
+    end:'^}$'
+    patterns: [
+      {
+        match: '\\w+(?=\\s*?=)'
+        name: 'set-variable'
+      }
+      {
+        match: '(bg(_fade)?|bg|buttons?|button|call|clear_log|flip|goto|(hide|show)_(all|text|ui_?(time|inventory|journal)?)|hide|hold|item[+-]|journal[+-]|print|showf?|move|music|next|set_highlight|unlock_gallery)(?=\\()'
+        name: 'script-function'
+      }
+      {
+        match: '(ifs?|calc|on(use|click))(?=\\()'
+        name: 'special-functions'
+      }
+      {
+        match: '(?!^)#[0-9a-fA-F]+\\b'
+        name: 'constant.numeric.vnscript'
+      }
+      {
+        match: '\\b-?([0-9]*[.])?[0-9]+'
+        name: 'constant.numeric.vnscript'
+      }
+      {
+        match: '\\|.*?\\|'
+        name: 'variable'
+      }
+      {
+        match: '(?!=.*\\))(true|false)(?=.*\\))'
+        name: 'true-false'
+      }
+      {
+        match: '@\\w*'
+        name: 'scene'
+      }
+
+      {
+        begin: '(?!^){'
+        end:'}'
+        name: 'inline-function'
+        patterns: [
+          {
+            match: '\\w+(?=\\s*?=)'
+            name: 'set-variable'
+          }
+          {
+            match: '(bg(_fade)?|bg|buttons?|button|call|clear_log|flip|goto|(hide|show)_(all|text|ui_?(time|inventory|journal)?)|hide|hold|item[+-]|journal[+-]|print|showf?|move|music|next|set_highlight|unlock_gallery)(?=\\()'
+            name: 'script-function'
+          }
+          {
+            match: '(ifs?|calc|on(use|click))(?=\\()'
+            name: 'special-functions'
+          }
+          {
+            match: '(?!^)#[0-9a-fA-F]+\\b'
+            name: 'constant.numeric.vnscript'
+          }
+          {
+            match: '\\b-?([0-9]*[.])?[0-9]+'
+            name: 'constant.numeric.vnscript'
+          }
+          {
+            match: '\\|.*?\\|'
+            name: 'variable'
+          }
+          {
+            match: '(?!=.*\\))(true|false)(?=.*\\))'
+            name: 'true-false'
+          }
+          {
+            match: '@\\w*'
+            name: 'scene'
+          }
+        ]
+      }
+    ]
+  }
+]

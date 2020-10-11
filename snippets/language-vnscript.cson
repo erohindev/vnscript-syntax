@@ -1,0 +1,151 @@
+'.source.vn':
+  '#color':
+    'prefix': 'color'
+    'body': 'color(${1:Name}, ${2:#ffffff})'
+  '#combination':
+    'prefix': 'combination'
+    'body': 'combination(${1:Item1}, ${2:Item2}, ${3:ItemResult})'
+  '#folder':
+    'prefix': 'folder'
+    'body': 'folder(${1:Name}, ${2:relative_path/subfolder})'
+  '#gallery':
+    'prefix': 'gallery'
+    'body': 'gallery(@${1:start}, @${2:end}, ${3:key}, ${4:relative_path/preview.png}, ${5:Title}, ${6:Description})'
+  '#include':
+    'prefix': 'include'
+    'body': 'include(${1:file.txt})'
+  '#item':
+    'prefix': 'item'
+    'body': 'item(${1:ItemName}, ${2:relative_path/image.png}, ${3:Item description})'
+  '#journal':
+    'prefix': 'journal'
+    'body': 'journal(${1:quest_key}, ${2:Title}, ${3:Description~New line})'
+  '#portrait_y':
+    'prefix': 'portrait_y'
+    'body': 'portrait_y(${1:-1})'
+  '#relation_add':
+    'prefix': 'relation_add'
+    'body': 'relation_add(${1:Name}, ${2:relative_path/portrait.png})'
+  '#relation_stats':
+    'prefix': 'relation_stats'
+    'body': 'relation_stats(${1:Name}, ${2:var1}:${3:0-10}:${4:#ffffff}${5:[, var2:...]})'
+  '#stats':
+    'prefix': 'stats'
+    'body': 'stats(${1:var1}, ${2:var2}${3:[, var3]})'
+  '#status_text':
+    'prefix': 'status_text'
+    'body': 'status_text(${1:template with |variables|})'
+  '#status_image':
+    'prefix': 'status_image'
+    'body': 'status_image(${1:relative_path_with/|variables|/portrait.png})'
+  '#walkthrough':
+    'prefix': 'walkthrough'
+    'body': 'walkthrough(${1:quest_key}, ${2:Walkthrough with~new lines and <b>rich text</b>})'
+  'calc':
+    'prefix': 'calc'
+    'body': 'calc(${1:123} + ${2:|variable|})'
+  'bg':
+    'prefix': 'bg'
+    'body': 'bg(${1:relative_path/image.png})'
+  'bg_fade':
+    'prefix': 'bg_fade'
+    'body': 'bg_fade(${1:relative_path/image.png})'
+  'button':
+    'prefix': 'button'
+    'body': 'button(${1:Button text}, @${2:scene})'
+  'button{}':
+    'prefix': 'button{}'
+    'body': 'button(${1:Button text}, { ${2:print(blabla); goto() } })'
+  'buttons':
+    'prefix': 'buttons'
+    'body': 'buttons()'
+  'call':
+    'prefix': 'call'
+    'body': 'call(@${1:scene})'
+  'clear_log':
+    'prefix': 'clear_log'
+    'body': 'clear_log()'
+  'flip':
+    'prefix': 'flip'
+    'body': 'flip(${1:objectName})'
+  'goto':
+    'prefix': 'goto'
+    'body': 'goto(@${1:scene})'
+  'hide':
+    'prefix': 'hide'
+    'body': 'hide(${1:objectName})'
+  'hide_all':
+    'prefix': 'hide_all'
+    'body': 'hide_all()'
+  'hide_text':
+    'prefix': 'hide_text'
+    'body': 'hide_text(${1:true or empty})'
+  'hide_ui':
+    'prefix': 'hide_ui'
+    'body': 'hide_ui${1:[_time_inventory_journal]}()'
+  'hold':
+    'prefix': 'hold'
+    'body': 'hold()'
+  'if':
+    'prefix': 'if'
+    'body': 'if(|${1:var}| = ${2:123}, @${3:scene})'
+  'if{}':
+    'prefix': 'if{}'
+    'body': 'if(|${1:var}| = ${2:123}, { ${3:print(blabla); goto() } })'
+  'ifs':
+    'prefix': 'ifs'
+    'body': 'if(|${1:var}| = ${2:KEK}, @${3:scene})'
+  'ifs{}':
+    'prefix': 'ifs{}'
+    'body': 'ifs(|${1:var}| = ${2:KEK}, { ${3:print(blabla); goto() } })'
+  'item+':
+    'prefix': 'item+'
+    'body': 'item+(${1:Item})'
+  'item-':
+    'prefix': 'item-'
+    'body': 'item-(${1:Item})'
+  'journal+':
+    'prefix': 'journal+'
+    'body': 'journal+(${1:quest_key})'
+  'journal-':
+    'prefix': 'journal-'
+    'body': 'journal-(${1:quest_key})'
+  'onuse':
+    'prefix': 'onuse'
+    'body': 'onuse(${1:objectName}, ${2:Item}, @${3:scene})'
+  'onuse{}':
+    'prefix': 'onuse{}'
+    'body': 'onuse(${1:objectName}, ${2:Item}, { ${3:print(blabla); goto() } })'
+  'print':
+    'prefix': 'print'
+    'body': 'print(${1:text})'
+  'show':
+    'prefix': 'show'
+    'body': 'show(${1:objectName}, ${2:relative_path/image.png}, ${3:0.0}${4:[, -1.0]})'
+  'showf':
+    'prefix': 'showf'
+    'body': 'showf(${1:objectName}, ${2:relative_path/image.png}, ${3:0.0}${4:[, -1.0]})'
+  'show_ui':
+    'prefix': 'show_ui'
+    'body': 'show_ui${1:[_time_inventory_journal]}()'
+  'move':
+    'prefix': 'move'
+    'body': 'move(${1:objectName}, ${2:0.0}${3:[, -1.0]})'
+  'music':
+    'prefix': 'music'
+    'body': 'music(${1:relative_path/track.ogg})'
+  'next':
+    'prefix': 'next'
+    'body': 'next()'
+  'set_highlight':
+    'prefix': 'set_highlight'
+    'body': 'set_highlight(${1:objectName}, ${2:true or false})'
+  'onclick':
+    'prefix': 'onclick'
+    'body': 'onclick(${1:objectName}, @${2:scene}${3:[, cursor]})'
+  'onclick{}':
+    'prefix': 'onclick{}'
+    'body': 'onclick(${1:objectName}, @${2:scene}, { ${3:print(blabla); goto() }}${4:[, cursor]})'
+  'unlock_gallery':
+    'prefix': 'unlock_gallery'
+    'body': 'unlock_gallery(@${1:scene})'

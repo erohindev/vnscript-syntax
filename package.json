@@ -1,0 +1,14 @@
+{
+  "name": "vnscript-syntax",
+  "main": "./lib/vnscript-syntax",
+  "version": "0.0.1",
+  "description": "Syntax highlighting for VNscript",
+  "keywords": [
+    "highlighting"
+  ],
+  "repository": "https://github.com/atom/vnscript-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
