@@ -6,7 +6,10 @@
   "keywords": [
     "highlighting"
   ],
-  "repository": "https://github.com/atom/vnscript-syntax",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erohindev/vnscript-syntax.git"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
