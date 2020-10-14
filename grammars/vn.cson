@@ -26,7 +26,7 @@ patterns: [
         name: 'set-variable'
       }
       {
-        match: '#(color|combination|folder|gallery|journal|include|portrait_y|journal|item|portrait_y|relation_add|relation_stats|stats|status_text|status_image|walkthrough)'
+        match: '#(color|combination|folder|gallery|journal|include|portrait_y|journal|item(_stack)?|portrait_y|relation_add|relation_stats|stats|status_text|status_image|walkthrough)'
         name: 'pre-function'
       }
       {
