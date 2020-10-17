@@ -31,10 +31,10 @@
     'body': 'relation_add(${1:Name}, ${2:relative_path/portrait.png})'
   '#relation_stats':
     'prefix': 'relation_stats'
-    'body': 'relation_stats(${1:Name}, ${2:var1}:${3:0-10}:${4:#ffffff}${5:[, var2:...]})'
+    'body': 'relation_stats(${1:Name}, ${2:var1}:${3:0-10}:${4:#ffffff}${5:, var2:...})'
   '#stats':
     'prefix': 'stats'
-    'body': 'stats(${1:var1}, ${2:var2}${3:[, var3]})'
+    'body': 'stats(${1:var1}, ${2:var2}${3:, ...})'
   '#status_text':
     'prefix': 'status_text'
     'body': 'status_text(${1:template with |variables|})'
@@ -103,10 +103,10 @@
     'body': 'ifs(|${1:var}| = ${2:KEK}, { ${3:print(blabla); goto() } })'
   'item+':
     'prefix': 'item+'
-    'body': 'item+(${1:Item})'
+    'body': 'item+(${1:Item}, ${2:1})'
   'item-':
     'prefix': 'item-'
-    'body': 'item-(${1:Item})'
+    'body': 'item-(${1:Item}, ${2:1})'
   'journal+':
     'prefix': 'journal+'
     'body': 'journal+(${1:quest_key})'
@@ -124,16 +124,16 @@
     'body': 'print(${1:text})'
   'show':
     'prefix': 'show'
-    'body': 'show(${1:objectName}, ${2:relative_path/image.png}, ${3:0.0}${4:[, -1.0]})'
+    'body': 'show(${1:objectName}, ${2:relative_path/image.png}, ${3:0.0}${4:, -1.0})'
   'showf':
     'prefix': 'showf'
-    'body': 'showf(${1:objectName}, ${2:relative_path/image.png}, ${3:0.0}${4:[, -1.0]})'
+    'body': 'showf(${1:objectName}, ${2:relative_path/image.png}, ${3:0.0}${4:, -1.0})'
   'show_ui':
     'prefix': 'show_ui'
     'body': 'show_ui${1:[_time_inventory_journal]}()'
   'move':
     'prefix': 'move'
-    'body': 'move(${1:objectName}, ${2:0.0}${3:[, -1.0]})'
+    'body': 'move(${1:objectName}, ${2:0.0}${3:, -1.0})'
   'music':
     'prefix': 'music'
     'body': 'music(${1:relative_path/track.ogg})'
@@ -145,10 +145,10 @@
     'body': 'set_highlight(${1:objectName}, ${2:true or false})'
   'onclick':
     'prefix': 'onclick'
-    'body': 'onclick(${1:objectName}, @${2:scene}${3:[, cursor]})'
+    'body': 'onclick(${1:objectName}, @${2:scene}${3:, cursor})'
   'onclick{}':
     'prefix': 'onclick{}'
-    'body': 'onclick(${1:objectName}, @${2:scene}, { ${3:print(blabla); goto() }}${4:[, cursor]})'
+    'body': 'onclick(${1:objectName}, @${2:scene}, { ${3:print(blabla); goto() }}${4:, cursor})'
   'unlock_gallery':
     'prefix': 'unlock_gallery'
     'body': 'unlock_gallery(@${1:scene})'
