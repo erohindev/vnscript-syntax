@@ -1,4 +1,7 @@
 '.source.vn':
+  '@function':
+    'prefix': 'callable_function'
+    'body': '// variable = call(@callable_function, 1, 2)\n@${1:callable_function}\n{\n\tparams(_a, _b)\n\treturn = calc(|_a| + |_b|)\n}'
   '#color':
     'prefix': 'color'
     'body': 'color(${1:Name}, ${2:#ffffff})'
@@ -76,7 +79,7 @@
     'body': 'goto(@${1:scene})'
   'hide':
     'prefix': 'hide'
-    'body': 'hide(${1:objectName})'
+    'body': 'hide(${1:objectName}, ${2:[temp]})'
   'hide_all':
     'prefix': 'hide_all'
     'body': 'hide_all()'
@@ -119,12 +122,18 @@
   'onuse{}':
     'prefix': 'onuse{}'
     'body': 'onuse(${1:objectName}, ${2:Item}, { ${3:print(blabla); goto() } })'
+  'params':
+    'prefix': 'params'
+    'body': 'params(${1:_a}, ${2:_b}, ${3:etc})'
   'print':
     'prefix': 'print'
     'body': 'print(${1:text})'
   'show':
     'prefix': 'show'
     'body': 'show(${1:objectName}, ${2:relative_path/image.png}, ${3:0.0}${4:, -1.0})'
+  'show_all':
+    'prefix': 'show_all'
+    'body': 'show_all()'
   'showf':
     'prefix': 'showf'
     'body': 'showf(${1:objectName}, ${2:relative_path/image.png}, ${3:0.0}${4:, -1.0})'
