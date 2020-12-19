@@ -128,6 +128,9 @@
   'print':
     'prefix': 'print'
     'body': 'print(${1:text})'
+  'random':
+    'prefix': 'random'
+    'body': 'random(${1:0}, ${2:100})'
   'show':
     'prefix': 'show'
     'body': 'show(${1:objectName}, ${2:relative_path/image.png}, ${3:0.0}${4:, -1.0})'

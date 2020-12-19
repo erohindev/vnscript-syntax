@@ -65,7 +65,7 @@ patterns: [
         name: 'script-function'
       }
       {
-        match: '(ifs?|calc|on(use|click))(?=\\()'
+        match: '(ifs?|calc|random|on(use|click))(?=\\()'
         name: 'special-functions'
       }
       {
@@ -103,7 +103,7 @@ patterns: [
             name: 'script-function'
           }
           {
-            match: '(ifs?|calc|on(use|click))(?=\\()'
+            match: '(ifs?|calc|random|on(use|click))(?=\\()'
             name: 'special-functions'
           }
           {
