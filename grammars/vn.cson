@@ -61,7 +61,7 @@ patterns: [
         name: 'set-variable'
       }
       {
-        match: '(bg(_fade)?|bg|buttons?|button|call|clear_log|flip|goto|(hide|show)_(all|text|ui_?(time|inventory|journal)?)|hide|hold|item[+-]|journal[+-]|print|showf?|move|music|next|set_highlight|unlock_gallery)(?=\\()'
+        match: '(bg(_fade)?|autosave|bg|buttons?|button|call|clear_log|flip|index|goto|(hide|show)_(all|text|ui_?(time|inventory|journal)?)|hide|hold|item[+-]|journal[+-]|print|showf?|move|music|next|set_highlight|unlock_gallery)(?=\\()'
         name: 'script-function'
       }
       {
@@ -99,7 +99,7 @@ patterns: [
             name: 'set-variable'
           }
           {
-            match: '(bg(_fade)?|bg|buttons?|button|call|clear_log|flip|goto|(hide|show)_(all|text|ui_?(time|inventory|journal)?)|hide|hold|item[+-]|journal[+-]|print|showf?|move|music|next|set_highlight|unlock_gallery)(?=\\()'
+            match: '(bg(_fade)?|autosave|bg|buttons?|button|call|clear_log|flip|index|goto|(hide|show)_(all|text|ui_?(time|inventory|journal)?)|hide|hold|item[+-]|journal[+-]|print|showf?|move|music|next|set_highlight|unlock_gallery)(?=\\()'
             name: 'script-function'
           }
           {

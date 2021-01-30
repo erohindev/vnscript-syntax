@@ -47,6 +47,9 @@
   '#walkthrough':
     'prefix': 'walkthrough'
     'body': 'walkthrough(${1:quest_key}, ${2:Walkthrough with~new lines and <b>rich text</b>})'
+  'autosave':
+    'prefix': 'autosave'
+    'body': 'autosave()'
   'calc':
     'prefix': 'calc'
     'body': 'calc(${1:123} + ${2:|variable|})'
@@ -104,6 +107,9 @@
   'ifs{}':
     'prefix': 'ifs{}'
     'body': 'ifs(|${1:var}| = ${2:KEK}, { ${3:print(blabla); goto() } })'
+  'index':
+    'prefix': 'index'
+    'body': 'index(${1:name}, ${2:0})'
   'item+':
     'prefix': 'item+'
     'body': 'item+(${1:Item}, ${2:1})'
